@@ -1,3 +1,18 @@
+<!-- PAYMENTS-READY DRAFT — prepared 2026-11-15, after the live page was confirmed at https://mredmon75.github.io/Index-html-/
+     TEST MODE links below, updated 2026-11-15 in the Duplicky LLC Stripe account (test mode):
+     Product Ironclad Securety prod_VdTAggJ1BCeWtI, tax code txcd_10103001 (SaaS - business use),
+     monthly price price_1UcCIwFaBt55UKVzkeOdmpnV ($7.99/mo), yearly price price_1UcCJFFaBt55UKVzeUMQ4uMW ($59/yr),
+     both with 14-day free trial. These are TEST links — no real money moves.
+     Tax Settings are now ACTIVE: head office 524 Wilson Ave, Wood River, IL 62095, defaults exclusive
+     tax + txcd_10103001. These links have automatic_tax ENABLED (monthly plink_1UcCfJFaBt55UKVz23lZlmaX,
+     yearly plink_1UcCgCFaBt55UKVz1cqaamQR). The earlier test links without automatic tax
+     (test_14AeVd7RH0yAcWIdaP5Vu00 / test_7sY7sLdc12GI6ykgn15Vu01) are superseded — do not use them.
+     Verified in test mode 2026-11-15 (taxcalc_1UcChtFaBt55UKVzhNPIMbFt): for a $7.99 monthly sale to a
+     customer in Wood River, IL, taxability_reason is "not_collecting" and tax is $0 — because no tax
+     registration exists yet. Stripe Tax collects no tax in a state or country until you add a
+     registration there. Still open: add tax registrations (starting with Illinois) in Stripe,
+     then tax will calculate on the new links.
+     The live page currently shows the same pricing as text only, with no Subscribe buttons. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +41,8 @@
   .cta { text-align: center; background: #16a34a; color: #fff; border-radius: 14px; padding: 28px 20px; margin-top: 8px; }
   .cta h2 { color: #fff; }
   .cta p { color: #dcfce7; }
+  .btn { display: inline-block; background: #16a34a; color: #fff; text-decoration: none; font-weight: 700; padding: 12px 22px; border-radius: 999px; margin-top: 12px; }
+  .btn.secondary { background: #fff; color: #0f172a; }
   .fine { font-size: 0.9rem; color: #94a3b8; text-align: center; margin-top: 24px; }
   ul { margin: 8px 0 0; padding-left: 20px; color: #cbd5e1; }
   li { margin: 6px 0; }
@@ -77,18 +94,19 @@
     <h2>Subscribe — monthly or yearly, your choice</h2>
     <p>Ironclad Securety is a subscribing app. You choose how you pay — monthly or yearly. It is optional on your end, and the price stays the same every year. No renewal jump.</p>
     <div class="grid">
-      <div class="item"><strong>Monthly — $7.99 / month</strong><p>Full watchdog protection, month to month. Cancel anytime.</p></div>
-      <div class="item"><strong>Yearly — $59 / year</strong><p>Full watchdog protection for a whole year. That is about $4.92 a month, and the best value.</p></div>
+      <div class="item"><strong>Monthly — $7.99 / month</strong><p>Full watchdog protection, month to month. Cancel anytime.</p><a class="btn" href="https://buy.stripe.com/test_7sY5kDfk93KM6yk3Af5Vu02">Subscribe monthly — 14 days free</a></div>
+      <div class="item"><strong>Yearly — $59 / year</strong><p>Full watchdog protection for a whole year. That is about $4.92 a month, and the best value.</p><a class="btn" href="https://buy.stripe.com/test_aFaeVd3Br1CE09W9YD5Vu03">Subscribe yearly — 14 days free</a></div>
       <div class="item"><strong>Free trial — 14 days</strong><p>Try the full watchdog first, so you can feel the peace of mind before you pay.</p></div>
     </div>
     <p style="margin-top:16px;">You pay for your own protection, using our watchdogs. No hidden fees.</p>
   </section>
 
   <section class="card">
-    <h2>Your data stays yours</h2>
-    <p>No third-party storage. No servers needed for Ironclad to store your data.</p>
-    <p>You are responsible for keeping your own data, by copying it or using your own storage. That is on purpose — a precaution to help prevent your most sensitive information from being held somewhere else where it could be hacked or compromised.</p>
-    <p>Ironclad watches and warns. It does not keep your private life on someone else’s server.</p>
+    <h2>Your data stays yours — encrypted and in your hands</h2>
+    <p><strong>Payments are encrypted through Stripe.</strong> When you subscribe, your card details go straight to Stripe's secure, encrypted checkout. They never touch Ironclad, and Ironclad never sees or stores your card number.</p>
+    <p><strong>No third-party storage. No servers needed for Ironclad to store your data.</strong> Your personal information, your logs, and your sensitive information stay on your own device, in your own storage.</p>
+    <p><strong>You keep your own records.</strong> You can download and save your own information and logs yourself, by copying them or using your own storage. That is on purpose — a precaution to help prevent your most sensitive information from being held somewhere else where it could be hacked or compromised.</p>
+    <p>Ironclad watches and warns. It does not keep your private life on someone else's server.</p>
   </section>
 
   <section class="card">
@@ -103,6 +121,7 @@
   <section class="cta">
     <h2>Your watchdog is on duty.</h2>
     <p>Ironclad Securety — great, stand-alone security. No comparable. Built for hard-working people who deserve to feel safe.</p>
+    <p><a class="btn secondary" href="https://buy.stripe.com/test_7sY5kDfk93KM6yk3Af5Vu02">Start your 14-day free trial</a></p>
   </section>
 
   <p class="fine">Ironclad Securety is a security watchdog. If you are in immediate danger, call 911. To report cyber crime, visit ic3.gov and ReportFraud.ftc.gov.</p>
